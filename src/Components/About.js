@@ -12,9 +12,9 @@ const About = () => {
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
           <p>
             Hi, my name is <b>Manh Thong</b> and I am from Quang Ngai Province, Viet Nam.
-            I'm a <b>Javascript/ Typescript stack web developer</b> and a final year college student pursuing <b>BTech in CSE</b>. <br/><br/>
-            I have done an internship as a <b>software developer</b> at GoalFi which is a fintech startup.
-            I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
+            I'm a <b>Javascript/ Typescript developer</b>. <br/><br/>
+            I have done an internship as a <b>Software developer</b> at STECH which is a social network startup(2021).<br/><br/>
+            Currently I have 2 years experiences with <b>React/ NodeJs(NestJs) stack</b><br/><br/>
             I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
           </p>
         </div>
@@ -36,17 +36,22 @@ const About = () => {
         
         <Skills skill='React' />
         <Skills skill='Node' />
+        <Skills skill='Nest' />
+        <Skills skill='AWS' />
+        <Skills skill='Nginx' />
+        <Skills skill='EC2' />
+        <Skills skill='PM2' />
+        <Skills skill='Vercel' />
         <Skills skill='Express' />
         <Skills skill='MongoDb' />
-        <Skills skill='Git' />
+        <Skills skill='Postgres' />
+        <Skills skill='MySQL' />
         <Skills skill='Github' />
         <Skills skill='Javascript' />
-        <Skills skill='C++' />
+        <Skills skill='Typescript' />
         <Skills skill='Python' />
         <Skills skill='Figma' />
-        <Skills skill='Vercel' />
         <Skills skill='Npm' />
-        <Skills skill='Bootstrap'/>
         
       </div>
     </>
