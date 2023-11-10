@@ -42,7 +42,7 @@ const Nav = () => {
   return (
     <nav className={navbarblur? 'Navbar blur':'Navbar'}> 
  
-        <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>MT's Portfolio</h1>
+        <h1 onClick={()=>window.location.href='/'} className='Logo'>MT's Portfolio</h1>
 
         <div className='Hamburger' onClick={showMenu}>
             <span className='bar'></span>
