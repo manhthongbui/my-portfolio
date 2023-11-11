@@ -5,6 +5,8 @@ import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
 import Avatar from '../images/Avatar.png';
 import {CiCoffeeCup} from "react-icons/ci";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { GrMail } from 'react-icons/gr';
 
 const Home = () => {
   return (
@@ -14,7 +16,12 @@ const Home = () => {
         <div className='HomeText'>
           <h1>Hi There!</h1>
           <h1>I'M <b>MANH THONG</b></h1>
-          <Typed/>   
+          <Typed/> 
+          <div className='footerLinks' style={{justifyContent: 'space-between', marginTop: 24}}>
+        <a href="https://github.com/manhthongbui" target='_blank' rel="noreferrer"><FaGithub size={48}/></a>
+        <a href="https://www.linkedin.com/in/manhthongbui" target='_blank' rel="noreferrer"><FaLinkedin size={48}/></a>
+        <a href='mailTo:manhthong.work@gmail.com' target='_blank' rel="noreferrer"><GrMail size={48}/></a>
+      </div>  
         </div>
 
         <Lottie 
