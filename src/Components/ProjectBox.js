@@ -3,23 +3,27 @@ import {FaGithub} from "react-icons/fa";
 import {CgFileDocument} from "react-icons/cg";
 
 
-const  ProjectBox = ({projectPhoto, projectName}) => {
+const  ProjectBox = ({projectPhoto, projectName, code}) => {
   const desc = {
-    TindogDesc : "This website is a landing page of Tinder but for dogs. It is a responsive website which was made to understand Bootstrap. I also learned how to host my project on Github and then how to deploy that project using Github pages.",
-    TindogGithub : "https://github.com/DevanshSahni/tindog",
-    TindogWebsite : "https://devanshsahni.github.io/tindog/",
+    oneDesc  : "A WMS (Warehouse management system), OMS (Orders Management system) that manage your product, and your orders sync with multiple marketplace supported",
+    oneGithub : "",
+    oneWebsite : "https://fulfil.ztoasia.com",
+    
+    heazin_lpDesc : "It a landing page that introduce Heazin ecosystem. Here you can buy medicines. Or you can be a agency/ merchant can sell your products.",
+    heazin_lpGithub : "",
+    heazin_lpWebsite : "https://beta.heazin.com/",
 
-    RogFreeDesc : "A website that shows you over seven specialized yoga postures for specific diseases or health problems. This was a group project made in a team of two for a 36-hour-long online hackathon named Hackodisha 2.0.",
-    RogFreeGithub : "https://github.com/DevanshSahni/Rog-Free",
-    RogFreeWebsite : "https://devanshsahni.github.io/Rog-Free/",
+    heazin_boDesc : "A Back Office page manage all user in Heazin ecosystem. Provide manage Seller, Buyer, Chat support, Products",
+    heazin_boGithub : "",
+    heazin_boWebsite : "https://beta.heazin.com/",
 
-    NewsletterDesc:"A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
-    NewsletterGithub:"",
-    NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/"
+    qepDesc:"A Plugin of Shopify that saving your time to manage and update your products with the best interface. You can do all main features the product actually need",
+    qepGithub:"",
+    qepWebsite:"https://demoqep.2fsoftapp.com/wp-admin/admin.php?page=c2fsoft-qepp-submenu-page"
   }
 
   let show ='';
-  if(desc[projectName + 'Github']===""){
+  if(desc[code + 'Github']===""){
     show="none";
   }
     
@@ -30,14 +34,14 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
             <br />
             <h3>{projectName}</h3>
             <br />
-            {desc[projectName + 'Desc']}
+            {desc[code + 'Desc']}
             <br />
 
-            <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank'>
+            <a style={{display:show}} href={desc[code + 'Github']} target='_blank' rel="noreferrer">
               <button className='projectbtn'><FaGithub/> Github</button>
             </a>
 
-            <a href={desc[projectName + 'Website']} target='_blank'>
+            <a href={desc[code + 'Website']} target='_blank' rel="noreferrer">
               <button className='projectbtn'><CgFileDocument/> Demo</button>
             </a>
         </div>
